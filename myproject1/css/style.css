@@ -1,0 +1,829 @@
+/* Reset padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* General footer styling */
+.footer {
+    background-color: #1C768F;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FBF3F2;
+}
+
+/* Social links styling */
+.footersociallinks {
+    margin-bottom: 20px;
+}
+
+.socialmedia_links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socialmedia_links li {
+    margin: 0 10px;
+    padding-right: 5px;
+}
+
+.socialmedia_links a {
+    text-decoration: none;
+    color: #FBF3F2;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    font-size: 30px; /* Adjust the icon size if needed */
+}
+
+.socialmedia_links a:hover {
+    color: #FA991C;
+    cursor: pointer;
+}
+
+/* Shop now button styling */
+.footershopnow {
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footershopnow:hover {
+    background-color: #032539;
+    color: #FBF3F2;
+}
+
+/* Menu link styling */
+.menulink {
+    margin-bottom: 20px;
+}
+
+.footermenu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footermenu li {
+    margin: 0 10px;
+}
+
+.footermenu a {
+    text-decoration: none;
+    color: #FBF3F2;
+    transition: color 0.3s;
+}
+
+.footermenu a:hover {
+    color: #FA991C;
+    cursor: pointer;
+}
+
+/* Footer text styling */
+.footer p {
+    margin: 0;
+}
+
+/* General header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1C768F;
+    color: #FBF3F2;
+    flex-wrap: wrap;
+}
+
+/* Container for brand name and logo */
+.brand-container {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+/* Brand name styling */
+header h3 {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 1.5em;
+}
+
+/* Logo styling */
+.logo img {
+    max-height: 40px;
+}
+
+/* Search bar styling */
+.searchbar {
+    display: flex;
+    flex: 1 1 auto;
+    max-width: 400px;
+    margin: 10px;
+}
+
+.searchbar input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 2px solid #FA991C;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.searchbar button {
+    padding: 5px 10px;
+    background-color: #FA991C;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #1C768F;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.searchbar button:hover {
+    background-color: #FBF3F2;
+}
+
+/* Navbar styling */
+.navbar {
+    flex: 0 0 auto;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FBF3F2;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FA991C;
+    cursor: pointer;
+}
+
+/* Slider styling */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px #1C768F;
+}
+
+.slider_img {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+}
+
+.sliderimg {
+    min-width: 100%;
+    height: 600px;
+    border-image: fill 0 linear-gradient(#0003, #000);
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-100%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* All catalogs styling */
+.allcatalogs {
+    width: 100%;
+    height: auto;
+    background-color: #1C768F;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.allcatalogs h2 {
+    display: flex;
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.allcatalogs ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.allcatalogs ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 850px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.allcatalogs ul li img {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    transition: opacity 0.3s ease;
+}
+
+.allcatalogs ul li img:hover {
+    opacity: 0.7;
+}
+
+.allcatalogs ul li p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FBF3F2;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.allcatalogs ul li button {
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.allcatalogs ul li button:hover {
+    background-color: #032539;
+    color: #FBF3F2;
+}
+
+/* Brand awareness styling */
+.brandawareness h4 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.brandawareness h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 35px;
+    background-color: #032539;
+}
+
+.brandawareness {
+    color: #FBF3F2;
+    background-color: #1C768F;
+}
+
+/* Best seller category styling */
+.bestsellercatagory {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #032539;
+}
+
+.bestsellercatagory h2 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FBF3F2;
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.bestsellercatagory ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.bestsellercatagory ul li div {
+    width: 200px;
+    height: 310px;
+    padding: 20px;
+}
+
+.bestsellercatagory ul li div img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 220px;
+    padding-bottom: 5px;
+    border-radius: 15%;
+    transition: opacity 0.3s ease;
+}
+
+.bestsellercatagory ul li div img:hover {
+    opacity: 0.7;
+}
+
+.bestsellercatagory ul li div p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FBF3F2;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bestsellercatagory ul li div button {
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bestsellercatagory ul li div button:hover {
+    background-color: #1C768F;
+    color: #FBF3F2;
+}
+
+.bannerimg {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bannerimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bannerimg .brandname {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+.bannerimg .tagline {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #000;
+    margin: 0;
+}
+
+.bannerimg button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 25px;
+}
+
+.bannerimg button:hover {
+    background-color: #1C768F;
+    color: #FBF3F2;
+}
+
+.catalog1 {
+    width: 100%;
+    height: auto;
+    background-color: #1C768F;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.catalog1 h2 {
+    display: flex;
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog1 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.catalog1 ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 850px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.catalog1 ul li img {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    transition: opacity 0.3s ease;
+}
+
+.catalog1 ul li img:hover {
+    opacity: 0.7;
+}
+
+.catalog1 ul li p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FBF3F2;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.catalog1 ul li button {
+    display: flex;
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.catalog1 ul li button:hover {
+    background-color: #032539;
+    color: #FBF3F2;
+}
+
+.loginbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.loginform {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.loginform h2
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #1C768F;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.text_field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.text_field p {
+    color: #1C768F;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+}
+
+.text_field input {
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #1C768F;
+    padding: 0 20px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.displaystrength {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#passwordstrength {
+    text-align: left;
+    color: #054658;
+    font-size: 16px;
+    display: none;
+}
+
+#strengthtype {
+    font-weight: bold;
+}
+
+#login_button
+{
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#login_button:hover
+{
+    background-color: #032539;
+    color: #FBF3F2;
+}
+
+.signup_q
+{
+    display: flex;
+}
+
+.loginform button
+{
+    display: flex;
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.loginform a
+{
+    text-decoration: none;
+    color: #1C768F;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.loginform a:hover
+{
+    color: #51a4bb;
+    text-decoration: underline;
+}
+
+.loginform button:hover
+{
+    background-color: #032539;
+    color: #FBF3F2;
+}
+.Welcome
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #1C768F;
+}
+
+.signupform
+{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    border-radius: 20px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.SignUp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.signupform button
+{
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+.signupform button:hover
+{
+    background-color: #032539;
+    color: #FBF3F2;
+}
+
+.signupform h3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: #1C768F;
+    font-size: 35px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+#countryInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content div:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.emailconfirmationbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #f7f7f7;
+}
+
+.confirmemail {
+    background-color: #63849b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.confirmemail h2 {
+    margin-bottom: 20px;
+    color: #28328d;
+    font-family: 'Arial', sans-serif;
+}
+
+.confirmemail button
+{
+    background-color: #FA991C;
+    color: #1C768F;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.confirmemail button:hover
+{
+    background-color: #032539;
+    color: #FBF3F2;
+}

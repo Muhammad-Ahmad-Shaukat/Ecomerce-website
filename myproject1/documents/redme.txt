@@ -1,0 +1,6 @@
+Color scheme
+
+1C768F   MAIN Color
+032539   COLOR devices_other
+FBF3F2    BUTTON TEXT
+FA991C    HOVER EFFECT
